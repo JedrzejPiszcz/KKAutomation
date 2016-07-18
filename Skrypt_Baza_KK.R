@@ -1,4 +1,4 @@
-#rm(list=ls())     #czyœci workspace
+rm(list=ls())     #czyœci workspace
 
 library(openxlsx) #biblioteka odpowiednia dla duzych plikow .xls/.xlsx
 

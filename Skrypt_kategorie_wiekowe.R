@@ -55,7 +55,7 @@ generuj_kategorie_wiekowe<-function(Data, rokBazy){
   
   #rok bazy podany w argumencie funckji/mo¿e bazowaæ na roku akademickim?
   Data$rok.bazy<-rokBazy
-  
+  Data$rok.bazy<-as.character(Data$rok.bazy)
   #do aktualnej daty - tutaj do roku
   #year(strptime(format(Sys.time(), format = "%d.%m.%Y"), format = "%d.%m.%Y"))-year(Data$Data.urodzenia[1]) 
   

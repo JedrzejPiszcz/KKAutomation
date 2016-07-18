@@ -1,6 +1,6 @@
 generuj_zwrotki<-function(Data, Zwrotki, lista_Data, lista_Zwrotki){
   library(openxlsx) #chyba najlepsza biblioteka do duzych plikow
-  wd<-"C:/Users/studen001/Desktop/JPiszcz/Jedrzej/R_test" #ustawiæ working directory
+  wd<-"C:/GIT/Automatyzacja_KK/KKAutomation" #ustawiæ working directory
   if(getwd()!=wd){setwd(wd)}
   env_ZIPCMD<-"C:/Rtools/bin/zip"                           #nalezy ustawic sciezke do pliku zip w pakiecie rtools
   if(Sys.getenv("R_ZIPCMD")!=env_ZIPCMD){Sys.setenv(R_ZIPCMD = env_ZIPCMD)}        
@@ -113,8 +113,8 @@ total<-length(Data[[7]])
 pb <- txtProgressBar(min = 0, max = total, style = 3) 
 
 for (i in 1:total){
-  if(is.na(found[[lista_Zmiennych[1]]][i])  ==T &&
-     is.na(found[[lista_Zmiennych[2]]][i])   ==T &&
+  if(is.na(found[[lista_Zmiennych[1]]][i]) ==T &&
+     is.na(found[[lista_Zmiennych[2]]][i]) ==T &&
      is.na(found[[lista_Zmiennych[3]]][i]) ==T &&
      is.na(found[[lista_Zmiennych[4]]][i]) ==T &&
      is.na(found[[lista_Zmiennych[5]]][i]) ==T &&
