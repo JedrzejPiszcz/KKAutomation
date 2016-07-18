@@ -26,7 +26,7 @@ generuj_maturzysta<-function(Data){
   
   Warunki$LIC[which(Data$Produkt=="LIC")]                   <-which(Data$Produkt=="LIC")
   Warunki$ROK[which(Data$Rok.ukoñczenia==Data$rok.bazy[1])] <-which(Data$Rok.ukoñczenia==Data$rok.bazy[1])
-  Warunki$CUDZ[which(Data$CudzoziemiecR=="Polak")]           <-which(Data$CudzoziemiecR=="Polak")
+  Warunki$CUDZ[which(Data$CudzoziemiecR=="Polak")]          <-which(Data$CudzoziemiecR=="Polak")
   
   
   maturzysta1<-sprawdz_warunki(Warunki, "maturzysta")

@@ -1,8 +1,8 @@
-#rm(list=ls())     #czyœci workspace
+rm(list=ls())     #czyœci workspace
 
 library(openxlsx) #biblioteka odpowiednia dla duzych plikow .xls/.xlsx
 
-wd<-"C:/GIT/Automatyzacja_KK" #ustawiæ working directory
+wd<-"C:/GIT/Automatyzacja_KK/KKAutomation" #ustawiæ working directory
 if(getwd()!=wd){setwd(wd)}
 env_ZIPCMD<-"C:/Rtools/bin/zip"                           #nalezy ustawic sciezke do pliku zip w pakiecie rtools
 if(Sys.getenv("R_ZIPCMD")!=env_ZIPCMD){Sys.setenv(R_ZIPCMD = env_ZIPCMD)}               
